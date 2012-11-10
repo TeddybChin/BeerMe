@@ -1,6 +1,8 @@
 Beerme::Application.routes.draw do
 
-  resources :orders
+  resources :users do
+    resources :orders
+  end
 
   resources :menu_items
 
